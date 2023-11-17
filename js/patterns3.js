@@ -43,14 +43,14 @@ const renderMask = (selection, id, inverted = false) => {
   mask
     .selectAll("g")
     .data(d3.range(symbols.length))
-    .join((enter) =>
+    .join((enter) => {
       enter
         .append("g")
         .attr("transform", (d) => `translate(${d * 180 + 125}, ${height / 2} )`)
         .append("path")
         .attr("d", (d) => symbol(symbols[d], 8000)())
-        .attr("fill", inverted ? "black" : "white")
-    );
+        .attr("fill", inverted ? "black" : "white");
+    });
 };
 
 svg.call(renderMask, "mask-1").call(renderMask, "mask-2", true);
