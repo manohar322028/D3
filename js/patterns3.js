@@ -31,8 +31,8 @@ svg
   .attr("height", height)
   .attr("mask", "url(#mask-2)");
 
-const renderMask = (id, inverted) => {
-  const mask = svg.append("mask").attr("id", id);
+const renderMask = (selection, id, inverted = false) => {
+  const mask = selection.append("mask").attr("id", id);
 
   mask
     .append("rect")
@@ -53,5 +53,4 @@ const renderMask = (id, inverted) => {
     );
 };
 
-renderMask("mask-1");
-renderMask("mask-2", true);
+svg.call(renderMask, "mask-1").call(renderMask, "mask-2", true);
