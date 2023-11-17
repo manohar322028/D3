@@ -1,5 +1,5 @@
 const size = 500;
-const points = 600;
+const points = 5000;
 const r = 5;
 
 const svg = d3
