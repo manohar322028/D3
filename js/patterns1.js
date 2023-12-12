@@ -71,8 +71,7 @@ for (let i = 0; i < points; i++) {
   const x = Math.round(Math.random() * size);
   const y = Math.round(Math.random() * size);
   const dest = Math.floor(Math.random() * 9);
-  console.log(i);
-  console.log(dest);
+
   svg
     .append("line")
     .attr("x1", x)

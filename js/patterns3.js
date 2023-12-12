@@ -1,7 +1,7 @@
 const width = window.innerWidth;
 const height = window.innerHeight / 2;
-const symbols = d3.symbols;
-const symbol = d3.symbol;
+symbols = d3.symbols;
+symbol = d3.symbol;
 
 const svg = d3
   .select("body")

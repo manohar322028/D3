@@ -4,7 +4,3 @@ const axisLeft = d3.axisLeft;
 const axisBottom = d3.axisBottom;
 
 const linegraph = () => {};
-
-// export linegraph
-
-export { linegraph };
